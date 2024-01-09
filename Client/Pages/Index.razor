@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+<p>@DebugValue</p>
+
+<a href="lazy">Lazy</a>
+
+@code {
+    public string DebugValue
+    {
+        get
+        {
+            System.Diagnostics.Debugger.Break();
+            return "Debugger breakpoint hits in .NET 7 and .NET 8";
+        }
+    }
+}

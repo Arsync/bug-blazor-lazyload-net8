@@ -1,0 +1,17 @@
+﻿@page "/lazy"
+
+<h1>Lazy</h1>
+<p>@DebugValue</p>
+
+<a href="/">Home</a>
+
+@code {
+    public string DebugValue
+    {
+        get
+        {
+            System.Diagnostics.Debugger.Break();
+            return "Debugger breakpoint hits in .NET 7 but not .NET 8";
+        }
+    }
+}
