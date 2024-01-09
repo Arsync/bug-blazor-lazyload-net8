@@ -10,6 +10,7 @@
     {
         get
         {
+            Console.WriteLine(OperatingSystem.IsBrowser() ? "Running on browser" : "Not running on browser");
             System.Diagnostics.Debugger.Break();
             return "Debugger breakpoint hits in .NET 7 and .NET 8";
         }
