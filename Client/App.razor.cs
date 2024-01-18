@@ -14,7 +14,7 @@ namespace LazyTest.Client
         {
             if (args.Path == "lazy")
             {
-                var assemblies = await AssemblyLoader.LoadAssembliesAsync(new[] { "LazyTest.Client.Lazy.wasm" });
+                var assemblies = await AssemblyLoader.LoadAssembliesAsync(new[] { "LazyTest.Client.Lazy.dll" });
                 lazyLoadedAssemblies.AddRange(assemblies);
                 Console.WriteLine($"loaded assemblies: {string.Join(",", assemblies.Select(i => i.FullName))}");
             }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyTest.Server", "Server\LazyTest.Server.csproj", "{A6772D52-A7F3-4E6D-8998-830785C423A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyTest.Server", "Server\LazyTest.Server.csproj", "{A6772D52-A7F3-4E6D-8998-830785C423A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyTest.Client", "Client\LazyTest.Client.csproj", "{83971486-4687-4C76-86A9-6945E287A85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyTest.Client", "Client\LazyTest.Client.csproj", "{83971486-4687-4C76-86A9-6945E287A85B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LazyTest.Client.Lazy", "Client.Lazy\LazyTest.Client.Lazy.csproj", "{DE4016D3-D246-484C-B547-B6B76E8F90E5}"
 EndProject

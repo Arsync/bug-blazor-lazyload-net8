@@ -1,0 +1,32 @@
+﻿@page "/lazy-second"
+
+<h1>Lazy Second Page</h1>
+<p>@DebugValue</p>
+
+<a href="/">Home</a>
+
+<br/>
+<br/>
+
+<div>Steps to reproduce:</div>
+<ol>
+    <li>Do some changes in source code of LazySecondPage.razor</li>
+    <li>Run debugger and navigate to this page</li>
+    <li>You will found that debugger works as expected</li>
+    <li>Now re-run debugger</li>
+    <li>Navigate to this page: breakpoint not loaded</li>
+</ol>
+
+@code {
+    public string DebugValue
+    {
+        get
+        {
+            // Ensure that remote authentication was configured first.
+
+            Console.WriteLine(OperatingSystem.IsBrowser() ? "Running on browser" : "Not running on browser");
+            System.Diagnostics.Debugger.Break();
+            return "Debugger breakpoint will hit once when page has changes.";
+        }
+    }
+}

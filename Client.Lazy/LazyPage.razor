@@ -3,7 +3,7 @@
 <h1>Lazy</h1>
 <p>@DebugValue</p>
 
-<a href="/">Home</a>
+<a href="/lazy-second">Now click here</a>
 
 @code {
     public string DebugValue
@@ -12,7 +12,7 @@
         {
             Console.WriteLine(OperatingSystem.IsBrowser() ? "Running on browser" : "Not running on browser");
             System.Diagnostics.Debugger.Break();
-            return "Debugger breakpoint hits in .NET 7 but not .NET 8";
+            return "Ok, wasmcli was disabled and the first page works as expected.";
         }
     }
 }
